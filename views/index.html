@@ -1,0 +1,70 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!-- You might want to try something fancier: -->
+<!-- html/nunjucks docs: http://mozilla.github.io/nunjucks/ -->
+<!-- jade: http://jade-lang.com/ -->
+<!-- haml: http://haml.info/tutorial.html -->
+<!-- hbs(handlebars): http://handlebarsjs.com/expressions.html -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Traffic Jam!</title>
+    <meta name="description" content="A cool thing made with HyperDev">
+    <link id="favicon" rel="icon" href="https://hyperdev.com/favicon.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <header>
+      <h1>
+        Get your traffic on!
+      </h1>
+    </header>
+    
+  <div class="container center-align">
+    <!--<video class="centre" src="https://cdn.hyperdev.com/us-east-1%3A55d96d0c-7128-44c4-b911-af942e6f1db1%2FBlyat_To_The_Future.webm" width="369" height="208" autoplay="" loop=""></video>
+    -->
+    <div>
+      <p>Traffic Jam is a game where you can change traffic light sequences to influence the flow of real world traffic data.</p>
+      <p>Green cars are cars that are moving >20km/hr, Yellow cars are moving slowly and red cars are stationary.</p>
+      <p>Maybe you can beat the status quo?</p>
+    </div>
+    
+    <div id="game">
+      <img src="https://cdn.hyperdev.com/us-east-1%3A55d96d0c-7128-44c4-b911-af942e6f1db1%2Ftrafficflow.png" class="trafficflow" id="tf1">
+      <img src="https://cdn.hyperdev.com/us-east-1%3A55d96d0c-7128-44c4-b911-af942e6f1db1%2Ftrafficflow.png" class="trafficflow" id="tf2">
+      <img src="https://cdn.hyperdev.com/us-east-1%3A55d96d0c-7128-44c4-b911-af942e6f1db1%2Ftrafficflow.png" class="trafficflow" id="tf3">
+      <img src="https://cdn.hyperdev.com/us-east-1%3A55d96d0c-7128-44c4-b911-af942e6f1db1%2Ftrafficflow.png" class="trafficflow" id="tf4">
+      <img src="https://cdn.hyperdev.com/us-east-1%3A55d96d0c-7128-44c4-b911-af942e6f1db1%2Ftrafficflow.png" class="trafficflow" id="tf5">
+      <img src="https://cdn.hyperdev.com/us-east-1%3A55d96d0c-7128-44c4-b911-af942e6f1db1%2Ftrafficflow.png" class="trafficflow" id="tf6">
+      <img src="https://cdn.hyperdev.com/us-east-1%3A55d96d0c-7128-44c4-b911-af942e6f1db1%2Ftrafficflow.png" class="trafficflow" id="tf7">
+      <img src="https://cdn.hyperdev.com/us-east-1%3A55d96d0c-7128-44c4-b911-af942e6f1db1%2Ftrafficflow.png" class="trafficflow" id="tf8">
+      <img src="https://cdn.hyperdev.com/us-east-1%3A55d96d0c-7128-44c4-b911-af942e6f1db1%2Ftrafficflow.png" class="trafficflow" id="tf9">
+      
+      <img src="https://cdn.hyperdev.com/us-east-1%3A55d96d0c-7128-44c4-b911-af942e6f1db1%2Fgreencar.png" class="car" id="car1">
+      
+      
+      <!--<img src="https://cdn.hyperdev.com/us-east-1%3A55d96d0c-7128-44c4-b911-af942e6f1db1%2Fmap2.png">-->
+    </div>
+  </div>
+    <footer>
+      <a href="https://hyperdev.com">
+        Remix this in HyperDev
+      </a>
+    </footer>
+    <!-- Your web-app is https, so your scripts need to be too -->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>        
+    <script src="/jQueryRotate.js"></script>
+    <script src="/client.js"></script>
+    
+
+  </body>
+</html>

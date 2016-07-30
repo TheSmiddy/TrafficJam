@@ -1,0 +1,139 @@
+/* styles */
+/* called by your view template */
+
+/* You might want to try something fancier: */
+/* less: http://lesscss.org/ */
+
+* {
+  box-sizing: border-box;
+}
+
+form {
+  margin-bottom: 25px;
+  padding: 15px;
+  background-color: cyan;
+  display: inline-block;
+  width: 100%;
+  max-width: 340px;
+  border-radius: 3px;
+}
+
+input {
+  display: block;
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+button {
+  font-size: 16px;
+  border-radius: 3px;
+  background-color: lightgrey;
+  border: 1px solid grey;
+  box-shadow: 2px 2px teal;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: yellow;
+}
+
+button:active {
+  box-shadow: none;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+footer {
+  margin-top: 50px;
+  padding-top: 25px;
+  border-top: 1px solid lightgrey;
+}
+
+footer > a {
+  color: #BBBBBB;
+}
+
+.nicejob {
+  text-decoration: line-through;
+}
+
+#game {
+  position: relative;
+  background: url("https://cdn.hyperdev.com/us-east-1%3A55d96d0c-7128-44c4-b911-af942e6f1db1%2Fmap2.png");
+  background-repeat: no-repeat;
+  margin: 0 auto; 
+  width: 705px;
+  height: 458px;
+}
+
+.trafficflow {
+  width:32px;
+  height:32px;
+  cursor: pointer;
+}
+
+#tf1 {
+  position: absolute;
+  left: 81px;
+  top: 53px;
+}
+
+#tf2 {
+  position: absolute;
+  left: 298px;
+  top: 53px;
+}
+
+#tf3 {
+  position: absolute;
+  left: 572px;
+  top: 53px;
+}
+
+#tf4 {
+  position: absolute;
+  left: 83px;
+  top: 215px;
+}
+
+#tf5 {
+  position: absolute;
+  left: 302px;
+  top: 218px;
+}
+
+#tf6 {
+  position: absolute;
+  left: 573px;
+  top: 214px;
+}
+
+#tf7 {
+  position: absolute;
+  left: 77px;
+  top: 370px;
+}
+
+#tf8 {
+  position: absolute;
+  left: 303px;
+  top: 375px;
+}
+
+#tf9 {
+  position: absolute;
+  left: 577px;
+  top: 371px;
+}
+
+#car1 {
+  position: absolute;
+  left: 0px;
+  top: 55px;
+}
