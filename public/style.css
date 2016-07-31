@@ -78,62 +78,64 @@ footer > a {
   cursor: pointer;
 }
 
-#tf1 {
+#tf0 {
   position: absolute;
   left: 81px;
   top: 53px;
 }
 
-#tf2 {
+#tf1 {
   position: absolute;
   left: 298px;
   top: 53px;
 }
 
-#tf3 {
+#tf2 {
   position: absolute;
   left: 572px;
   top: 53px;
 }
 
-#tf4 {
+#tf3 {
   position: absolute;
   left: 83px;
   top: 215px;
 }
 
-#tf5 {
+#tf4 {
   position: absolute;
   left: 302px;
   top: 218px;
 }
 
-#tf6 {
+#tf5 {
   position: absolute;
   left: 573px;
   top: 214px;
 }
 
-#tf7 {
+#tf6 {
   position: absolute;
   left: 77px;
   top: 370px;
 }
 
-#tf8 {
+#tf7 {
   position: absolute;
   left: 303px;
   top: 375px;
 }
 
-#tf9 {
+#tf8 {
   position: absolute;
   left: 577px;
   top: 371px;
 }
 
-#car1 {
+.car {
   position: absolute;
+}
+#car1 {
   left: 0px;
   top: 55px;
 }
