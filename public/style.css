@@ -139,3 +139,9 @@ footer > a {
   left: 0px;
   top: 55px;
 }
+
+#contextMenu {
+  position: absolute;
+  top: 310px;
+  left: 445px;
+}

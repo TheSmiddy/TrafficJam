@@ -21,8 +21,8 @@
   </head>
   <body>
     <header>
-      <h1>
-        Get your traffic on!
+      <h1 class="center-align">
+        Traffic Jam!
       </h1>
     </header>
     
@@ -36,7 +36,7 @@
     </div>
     
     <div id="game">
-      <img src="https://cdn.hyperdev.com/us-east-1%3A55d96d0c-7128-44c4-b911-af942e6f1db1%2Ftrafficflow.png" class="trafficflow" id="tf0">
+      <img src="https://cdn.hyperdev.com/us-east-1%3A55d96d0c-7128-44c4-b911-af942e6f1db1%2Ftrafficflow.png" class="trafficflow" id="tf0" onclick="showMenu();">
       <img src="https://cdn.hyperdev.com/us-east-1%3A55d96d0c-7128-44c4-b911-af942e6f1db1%2Ftrafficflow.png" class="trafficflow" id="tf1">
       <img src="https://cdn.hyperdev.com/us-east-1%3A55d96d0c-7128-44c4-b911-af942e6f1db1%2Ftrafficflow.png" class="trafficflow" id="tf2">
       <img src="https://cdn.hyperdev.com/us-east-1%3A55d96d0c-7128-44c4-b911-af942e6f1db1%2Ftrafficflow.png" class="trafficflow" id="tf3">
@@ -50,6 +50,67 @@
       
       <!--<img src="https://cdn.hyperdev.com/us-east-1%3A55d96d0c-7128-44c4-b911-af942e6f1db1%2Fmap2.png">-->
     </div>
+    <div id="contextMenu" class="hide">
+      <div class="row">
+        <div class="card-panel col s4 white hoverable">
+          <b>Signal sequence</b><br/>
+          <div class="input-field col s10">
+            <select>
+              <option value="0">North/South</option>
+              <option value="1">East/West</option>
+              <option value="2" selected>NS right turns only</option>
+              <option value="3">EW Right turns only</option>
+            </select>
+          </div>
+          <div class="input-field col s2">
+            <input value="2" id="time" type="text">
+            <label class="active" for="time">time</label>
+          </div>
+          
+          <div class="input-field col s10">
+            <select>
+              <option value="0" selected>North/South</option>
+              <option value="1">East/West</option>
+              <option value="2">NS right turns only</option>
+              <option value="3">EW Right turns only</option>
+            </select>
+          </div>
+          <div class="input-field col s2">
+            <input value="5" id="time" type="text">
+            <label class="active" for="time">time</label>
+          </div>
+          
+          <div class="input-field col s10">
+            <select>
+              <option value="0">North/South</option>
+              <option value="1">East/West</option>
+              <option value="2">NS right turns only</option>
+              <option value="3" selected>EW Right turns only</option>
+            </select>
+          </div>
+          <div class="input-field col s2">
+            <input value="2" id="time" type="text">
+            <label class="active" for="time">time</label>
+          </div>
+          
+          <div class="input-field col s10">
+            <select>
+              <option value="0">North/South</option>
+              <option value="1" selected>East/West</option>
+              <option value="2">NS right turns only</option>
+              <option value="3">EW Right turns only</option>
+            </select>
+          </div>
+          <div class="input-field col s2">
+            <input value="5" id="time" type="text">
+            <label class="active" for="time">time</label>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  
+  
   </div>
     <footer>
       <a href="https://hyperdev.com">

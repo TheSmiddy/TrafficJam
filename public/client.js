@@ -87,20 +87,20 @@ nodes[3] = {
   n: {left:83,top:230},
   s: {left:101,top:218},
   e: {left:83,top:215},
-  w: {left:110,top:223},
+  w: {left:110,top:226},
   grid: {row:1,col:0}
 };
 
 nodes[4] = {
-  n: {left:302,top:230},
-  s: {left:329,top:218},
+  n: {left:308,top:235},
+  s: {left:320,top:210},
   e: {left:297,top:225},
-  w: {left:330,top:223},
+  w: {left:330,top:228},
   grid: {row:1,col:1}
 };
 
 nodes[5] = {
-  n: {left:580,top:230},
+  n: {left:585,top:235},
   s: {left:601,top:220},
   e: {left:572,top:224},
   w: {left:615,top:229},
@@ -117,7 +117,7 @@ nodes[6] = {
 
 nodes[7] = {
   n: {left:310,top:404},
-  s: {left:325,top:368},
+  s: {left:320,top:368},
   e: {left:296,top:379},
   w: {left:332,top:394},
   grid: {row:2,col:1}
@@ -341,32 +341,36 @@ function findNextNode(carID) {
     if (Math.random()<0.5) {
       cars[carID]['nextNode'] = nextColNode;
       cars[carID]['heading'] = tempColHeading;
-      console.log("both false, column rolled");
     } else {
       cars[carID]['nextNode'] = nextRowNode;
       cars[carID]['heading'] = tempRowHeading;
-      console.log("both false, row rolled");
     }
   } else if (sameCol===true && sameRow === true) {
-    console.log("both true");
     //go to exit
   } else if (sameCol===false) {
     cars[carID]['nextNode'] = nextColNode;
     cars[carID]['heading'] = tempColHeading;
-    console.log("column false");
   } else if (sameRow===false) {
     cars[carID]['nextNode'] = nextRowNode;
     cars[carID]['heading'] = tempRowHeading;
-    console.log("row false");
   }
-  console.log(nodes[cars[carID]['nextNode']][cars[carID]['heading']]['top']);
   $('#car'+carID).animate({
       top: nodes[cars[carID]['nextNode']][cars[carID]['heading']]['top'],
       left: nodes[cars[carID]['nextNode']][cars[carID]['heading']]['left'],
     }, 3000, function() {
       findNextNode(carID);
     });
-  
-  
+}
+
+function showMenu() {
+  if ($('#contextMenu').hasClass("hide")) {
+    $('#contextMenu').removeClass("hide");
+  } else {
+    $('#contextMenu').addClass("hide");
+  }
   
 }
+
+$(document).ready(function() {
+    $('select').material_select();
+  });
